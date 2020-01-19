@@ -84,7 +84,7 @@ def migratoryBirds(arr):
     # return max(res, key=res.get)
     # 이 코드로 실행 시, 테스트 케이스에서 10만 개를 돌렸을 때, failed가 발생한다.
     # 왜 틀린지 모르겠다.
-    
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
