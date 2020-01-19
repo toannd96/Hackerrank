@@ -86,9 +86,10 @@ def pageCount(n, p):
         page.append((i,i+1))
     for j in range(len(page)):
         if p in page[j]:
-            first = j
+            first = j # 앞쪽에서부터 루프가 돌기 때문에 j는 반드시 앞에서 해당 페이지로 갈 수 있는 인덱스를 지목한다.
         else:
-            last = len(page) -1 - first
+            last = len(page) -1 - first #끝에서 서칭하려면 전체 page 길이에서 인덱스 번호를 찾아가야하기 때문에 -1을 하고,
+            # 끝자리에서 앞자리 값을 차감하면 끝에서 찾는 인덱스 번호가 완성된다.
     if first>last:
         return last
     else:
