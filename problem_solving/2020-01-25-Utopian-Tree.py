@@ -71,6 +71,7 @@ def utopianTree(n):
     #         height+=1
     #     else:
     #         height *=2
+    # 왜일까? 왜 for문 돌릴 때 테스트 케이스 값이 틀리는데, while문은 맞을까? 무슨 차이지?
     while(i<=n):
         if(i%2==0):
             height+=1
